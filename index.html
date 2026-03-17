@@ -52,6 +52,22 @@
         </nav>
 
         <div class="topbar__actions">
+          <button
+            class="iconbtn iconbtn--hamburger"
+            type="button"
+            data-open-nav
+            aria-label="Open menu"
+            aria-controls="navModal"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
           <a class="btn btn--ghost" href="#lead">Get started</a>
           <button class="btn btn--primary" type="button" data-open-lead>
             Book a call
@@ -66,37 +82,45 @@
           <div class="hero__copy">
             <div class="pill">
               <span class="pill__dot" aria-hidden="true"></span>
-              Built for leads. Designed for trust.
+              Built to turn clicks into calls.
             </div>
             <h1 class="hero__title">
-              Lead‑generating websites for contractors & real estate agents.
+              Get more calls and booked appointments from the traffic you already have.
             </h1>
             <p class="hero__subtitle">
-              Ironclad-Sites builds clean, modern landing pages that turn visitors into
-              calls, inquiries, and appointments—without clutter.
+              Ironclad-Sites builds conversion-first landing pages for contractors and real
+              estate professionals—so prospects trust you fast and take the next step.
             </p>
 
             <div class="hero__cta">
               <button class="btn btn--primary btn--lg" type="button" data-open-lead>
                 Book a Call
               </button>
-              <a class="btn btn--ghost btn--lg" href="#services">See services</a>
+              <a class="btn btn--ghost btn--lg" href="#offer">See the offer</a>
             </div>
 
             <ul class="trust">
               <li class="trust__item">
                 <span class="trust__icon" aria-hidden="true">✓</span>
-                Mobile‑first layouts
+                Built for mobile click‑to‑call
               </li>
               <li class="trust__item">
                 <span class="trust__icon" aria-hidden="true">✓</span>
-                Speed + SEO fundamentals
+                Speed + local SEO structure
               </li>
               <li class="trust__item">
                 <span class="trust__icon" aria-hidden="true">✓</span>
-                Clear calls‑to‑action
+                Clear CTA + lead form that converts
               </li>
             </ul>
+
+            <div class="hero__magnet">
+              <p class="hero__magnetTitle">Lead magnet</p>
+              <p class="hero__magnetText">
+                Get a <strong>free 5‑point website audit</strong> plus a <strong>1‑page mockup</strong>
+                outline you can launch with.
+              </p>
+            </div>
           </div>
 
           <div class="hero__card" aria-label="Preview of the lead form">
@@ -104,7 +128,7 @@
               <div class="card__header">
                 <div>
                   <p class="card__eyebrow">Quick start</p>
-                  <p class="card__title">Request a free website audit</p>
+                  <p class="card__title">Request the free audit + mockup</p>
                 </div>
                 <div class="badge" aria-hidden="true">2 min</div>
               </div>
@@ -229,6 +253,175 @@
         </div>
       </section>
 
+      <section id="problems" class="section section--muted">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">If your site looks “fine” but leads are slow…</h2>
+            <p class="section__subtitle">
+              These are the most common conversion killers we see for contractors and local
+              real estate pros.
+            </p>
+          </div>
+
+          <div class="two-col">
+            <div class="card card--soft">
+              <h3 class="card__kicker">5 real problems (and what they cost you)</h3>
+              <ul class="bullets">
+                <li><strong>No clear next step</strong> — visitors don’t know what to do.</li>
+                <li><strong>Weak trust signals</strong> — no proof, reviews, or guarantees.</li>
+                <li><strong>Not mobile-first</strong> — phone users can’t quickly call or book.</li>
+                <li><strong>Slow or cluttered pages</strong> — people bounce before reading.</li>
+                <li><strong>Generic messaging</strong> — doesn’t match the buyer’s intent or area.</li>
+              </ul>
+              <div class="inline-cta">
+                <button class="btn btn--primary" type="button" data-open-lead>Fix mine</button>
+                <a class="btn btn--ghost" href="#proof">See proof</a>
+              </div>
+            </div>
+
+            <div class="card card--soft">
+              <h3 class="card__kicker">The quick win</h3>
+              <p class="muted">
+                We structure one page to do one job: <strong>earn trust</strong>, <strong>answer objections</strong>,
+                and <strong>drive action</strong>.
+              </p>
+              <div class="proofline">
+                <div class="proofline__item">
+                  <p class="proofline__label">Primary CTAs</p>
+                  <p class="proofline__value">Book a call • Request a quote • Schedule a consult</p>
+                </div>
+                <div class="proofline__item">
+                  <p class="proofline__label">Built for</p>
+                  <p class="proofline__value">Contractors • Agents • Property managers</p>
+                </div>
+                <div class="proofline__item">
+                  <p class="proofline__label">Included</p>
+                  <p class="proofline__value">Lead form • Mobile click‑to‑call • Tracking-ready</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="offer" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Simple packages (launch-ready)</h2>
+            <p class="section__subtitle">
+              Choose the fastest path to more leads. No long rebuilds, no endless pages.
+            </p>
+          </div>
+
+          <div class="pricing">
+            <article class="pricecard">
+              <p class="pricecard__name">Starter Landing Page</p>
+              <p class="pricecard__price">$499</p>
+              <p class="pricecard__desc">Best for: one service + one location focus.</p>
+              <ul class="pricecard__list">
+                <li>Hero + service sections</li>
+                <li>Lead form + click-to-call</li>
+                <li>Basic on-page SEO structure</li>
+              </ul>
+              <button class="btn btn--primary btn--full" type="button" data-open-lead>
+                Get started
+              </button>
+            </article>
+
+            <article class="pricecard pricecard--featured" aria-label="Most popular package">
+              <p class="pricecard__tag">Most popular</p>
+              <p class="pricecard__name">Lead Gen Launch</p>
+              <p class="pricecard__price">$899</p>
+              <p class="pricecard__desc">Best for: contractors and agents running ads.</p>
+              <ul class="pricecard__list">
+                <li>Everything in Starter</li>
+                <li>Trust stack (reviews/testimonials + guarantee block)</li>
+                <li>Analytics/tracking-ready setup</li>
+              </ul>
+              <button class="btn btn--primary btn--full" type="button" data-open-lead>
+                Book a call
+              </button>
+            </article>
+
+            <article class="pricecard">
+              <p class="pricecard__name">Growth System</p>
+              <p class="pricecard__price">$1499</p>
+              <p class="pricecard__desc">Best for: multiple services or neighborhoods.</p>
+              <ul class="pricecard__list">
+                <li>Multiple sections/variants</li>
+                <li>2 lead magnets (audit + checklist)</li>
+                <li>Conversion copy refinement</li>
+              </ul>
+              <button class="btn btn--primary btn--full" type="button" data-open-lead>
+                Talk options
+              </button>
+            </article>
+          </div>
+
+          <div class="guarantee">
+            <div class="guarantee__icon" aria-hidden="true">🛡️</div>
+            <div class="guarantee__copy">
+              <p class="guarantee__title">Launch Guarantee</p>
+              <p class="guarantee__text">
+                If the page isn’t ready to publish after our agreed scope and inputs, we keep working
+                until it is—at no extra cost.
+              </p>
+            </div>
+            <div class="guarantee__actions">
+              <a class="btn btn--ghost" href="#process">How it works</a>
+              <button class="btn btn--primary" type="button" data-open-lead>Book a call</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof" class="section section--muted">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Trust matters. Here’s the proof stack.</h2>
+            <p class="section__subtitle">
+              Social proof + guarantees reduce hesitation and increase form completions.
+            </p>
+          </div>
+
+          <div class="social">
+            <div class="social__stat">
+              <p class="social__big">Mobile‑first</p>
+              <p class="social__small">Designed for click‑to‑call and fast reading</p>
+            </div>
+            <div class="social__stat">
+              <p class="social__big">Clear CTAs</p>
+              <p class="social__small">Above-the-fold action + repeated intent points</p>
+            </div>
+            <div class="social__stat">
+              <p class="social__big">Lead magnet</p>
+              <p class="social__small">Free audit + mockup to start conversations</p>
+            </div>
+          </div>
+
+          <div class="testimonials">
+            <article class="quote">
+              <p class="quote__text">
+                “We stopped losing leads on mobile. Calls went up once the page had one clear CTA.”
+              </p>
+              <p class="quote__meta">— Local contractor (remodeling)</p>
+            </article>
+            <article class="quote">
+              <p class="quote__text">
+                “The layout made it easy to book consults. It finally feels like a professional brand.”
+              </p>
+              <p class="quote__meta">— Real estate agent</p>
+            </article>
+            <article class="quote">
+              <p class="quote__text">
+                “Simple, fast, and focused. The trust section answered objections before we ever talked.”
+              </p>
+              <p class="quote__meta">— Property management</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="who" class="section section--muted">
         <div class="container">
           <div class="section__header">
@@ -346,9 +539,9 @@
       <section id="process" class="section">
         <div class="container">
           <div class="section__header">
-            <h2 class="section__title">A simple, reliable process</h2>
+            <h2 class="section__title">How ordering works (step-by-step)</h2>
             <p class="section__subtitle">
-              Clear steps so you know exactly what happens next.
+              A clear path from “request” to “publish” with no surprises.
             </p>
           </div>
 
@@ -356,28 +549,36 @@
             <li class="steps__item">
               <div class="steps__num" aria-hidden="true">1</div>
               <div>
-                <p class="steps__title">Quick discovery</p>
+                <p class="steps__title">Request + quick audit</p>
                 <p class="steps__text">
-                  We learn your niche, offer, location, and what a “good lead” looks like.
+                  You submit the form. We review your current site (or competitors) and identify quick wins.
                 </p>
               </div>
             </li>
             <li class="steps__item">
               <div class="steps__num" aria-hidden="true">2</div>
               <div>
-                <p class="steps__title">Build + refine</p>
+                <p class="steps__title">Copy + layout draft</p>
                 <p class="steps__text">
-                  We craft the page layout, messaging, and calls-to-action for conversions.
+                  We build the page around your offer, service area, and objections—with a single clear CTA.
                 </p>
               </div>
             </li>
             <li class="steps__item">
               <div class="steps__num" aria-hidden="true">3</div>
               <div>
-                <p class="steps__title">Launch-ready</p>
+                <p class="steps__title">Connect leads + publish</p>
                 <p class="steps__text">
-                  You get a mobile-friendly page and a lead form that’s ready to connect to
-                  your inbox or CRM.
+                  We connect the form to your email/CRM and get you a publish-ready page (mobile-first).
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__num" aria-hidden="true">4</div>
+              <div>
+                <p class="steps__title">Optimize</p>
+                <p class="steps__text">
+                  We iterate with real data: call clicks, form starts, and conversion rate improvements.
                 </p>
               </div>
             </li>
@@ -390,7 +591,7 @@
           <div class="section__header">
             <h2 class="section__title">FAQ</h2>
             <p class="section__subtitle">
-              No pricing on this mockup—just the basics prospects ask about.
+              Quick answers to reduce friction and increase submissions.
             </p>
           </div>
 
@@ -425,12 +626,12 @@
           <div class="lead__copy">
             <h2 class="lead__title">Ready to get started?</h2>
             <p class="lead__subtitle">
-              Share a few details and we’ll follow up to schedule a quick call.
+              Share a few details and we’ll send your free audit notes and a landing page outline.
             </p>
             <div class="lead__bullets">
               <div class="mini">
                 <p class="mini__title">What you’ll get</p>
-                <p class="mini__text">A clear landing page outline tailored to your market.</p>
+                <p class="mini__text">A 5-point audit + a 1-page mockup outline tailored to your market.</p>
               </div>
               <div class="mini">
                 <p class="mini__title">Best next step</p>
@@ -518,6 +719,13 @@
       </section>
     </main>
 
+    <div class="mobilebar" role="region" aria-label="Quick actions">
+      <a class="btn btn--ghost mobilebar__btn" href="#offer">Packages</a>
+      <button class="btn btn--primary mobilebar__btn" type="button" data-open-lead>
+        Book a call
+      </button>
+    </div>
+
     <footer class="footer">
       <div class="container footer__inner">
         <p class="footer__brand">
@@ -591,6 +799,35 @@
             Request a Call
           </button>
         </form>
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--nav" id="navModal" aria-label="Menu">
+      <div class="modal__inner modal__inner--nav">
+        <div class="modal__header">
+          <p class="modal__title">Menu</p>
+          <button class="iconbtn" type="button" data-close-nav aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M18 6L6 18M6 6l12 12"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="navdrawer" aria-label="Mobile navigation">
+          <a class="navdrawer__link" href="#services">Services</a>
+          <a class="navdrawer__link" href="#problems">Problems</a>
+          <a class="navdrawer__link" href="#offer">Offer</a>
+          <a class="navdrawer__link" href="#proof">Proof</a>
+          <a class="navdrawer__link" href="#who">Who we help</a>
+          <a class="navdrawer__link" href="#process">Process</a>
+          <a class="navdrawer__link" href="#faq">FAQ</a>
+          <a class="navdrawer__link" href="#lead">Get started</a>
+        </nav>
       </div>
     </dialog>
 

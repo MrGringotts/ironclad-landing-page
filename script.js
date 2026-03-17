@@ -153,6 +153,38 @@ function connectModal() {
   });
 }
 
+function connectNavModal() {
+  const dlg = $("#navModal");
+  if (!dlg) return;
+
+  const openers = $$("[data-open-nav]");
+  const closers = $$("[data-close-nav]");
+  const links = $$("a[href^='#']", dlg);
+
+  const open = () => {
+    if (typeof dlg.showModal === "function") dlg.showModal();
+    else dlg.setAttribute("open", "true");
+  };
+  const close = () => {
+    if (typeof dlg.close === "function") dlg.close();
+    else dlg.removeAttribute("open");
+  };
+
+  openers.forEach((btn) => btn.addEventListener("click", open));
+  closers.forEach((btn) => btn.addEventListener("click", close));
+  links.forEach((a) => a.addEventListener("click", close));
+
+  dlg.addEventListener("click", (e) => {
+    const rect = dlg.getBoundingClientRect();
+    const inDialog =
+      rect.top <= e.clientY &&
+      e.clientY <= rect.top + rect.height &&
+      rect.left <= e.clientX &&
+      e.clientX <= rect.left + rect.width;
+    if (!inDialog) close();
+  });
+}
+
 function connectTabs() {
   const root = document.querySelector("[data-tabs]");
   if (!root) return;
@@ -234,6 +266,7 @@ function connectAccordion() {
 
 function main() {
   connectModal();
+  connectNavModal();
   connectTabs();
   connectForms();
   connectAccordion();
