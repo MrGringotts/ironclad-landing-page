@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ironclad-Sites builds lead-generating websites for contractors and real estate agents."
+    />
+    <title>Ironclad-Sites — Lead-Generating Websites</title>
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" aria-label="Ironclad-Sites home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M8.2 12.2l2.4 2.4 5.2-5.2"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">Ironclad-Sites</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#who">Who we help</a>
+          <a class="nav__link" href="#process">Process</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <a class="btn btn--ghost" href="#lead">Get started</a>
+          <button class="btn btn--primary" type="button" data-open-lead>
+            Book a call
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              Built for leads. Designed for trust.
+            </div>
+            <h1 class="hero__title">
+              Lead‑generating websites for contractors & real estate agents.
+            </h1>
+            <p class="hero__subtitle">
+              Ironclad-Sites builds clean, modern landing pages that turn visitors into
+              calls, inquiries, and appointments—without clutter.
+            </p>
+
+            <div class="hero__cta">
+              <button class="btn btn--primary btn--lg" type="button" data-open-lead>
+                Book a Call
+              </button>
+              <a class="btn btn--ghost btn--lg" href="#services">See services</a>
+            </div>
+
+            <ul class="trust">
+              <li class="trust__item">
+                <span class="trust__icon" aria-hidden="true">✓</span>
+                Mobile‑first layouts
+              </li>
+              <li class="trust__item">
+                <span class="trust__icon" aria-hidden="true">✓</span>
+                Speed + SEO fundamentals
+              </li>
+              <li class="trust__item">
+                <span class="trust__icon" aria-hidden="true">✓</span>
+                Clear calls‑to‑action
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__card" aria-label="Preview of the lead form">
+            <div class="card">
+              <div class="card__header">
+                <div>
+                  <p class="card__eyebrow">Quick start</p>
+                  <p class="card__title">Request a free website audit</p>
+                </div>
+                <div class="badge" aria-hidden="true">2 min</div>
+              </div>
+
+              <form class="form" id="heroLeadForm" novalidate>
+                <div class="form__row">
+                  <label class="field">
+                    <span class="field__label">Name</span>
+                    <input
+                      class="field__input"
+                      name="name"
+                      autocomplete="name"
+                      required
+                      placeholder="Jane Smith"
+                    />
+                    <span class="field__error" data-error-for="name"></span>
+                  </label>
+                  <label class="field">
+                    <span class="field__label">Business type</span>
+                    <select class="field__input" name="businessType" required>
+                      <option value="" selected disabled>Select…</option>
+                      <option>Contractor</option>
+                      <option>Real estate agent</option>
+                      <option>Property management</option>
+                      <option>Other</option>
+                    </select>
+                    <span class="field__error" data-error-for="businessType"></span>
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input
+                    class="field__input"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="jane@company.com"
+                  />
+                  <span class="field__error" data-error-for="email"></span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Phone</span>
+                  <input
+                    class="field__input"
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                    placeholder="(555) 123‑4567"
+                  />
+                  <span class="field__error" data-error-for="phone"></span>
+                </label>
+
+                <button class="btn btn--primary btn--full" type="submit">
+                  Get Started
+                </button>
+
+                <p class="fineprint">
+                  By submitting, you agree we may contact you about your request. No spam.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">What we do</h2>
+            <p class="section__subtitle">
+              Focused services designed to increase inquiries, improve credibility, and
+              make it easy for prospects to reach you.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature">
+              <div class="feature__icon" aria-hidden="true">⚡</div>
+              <h3 class="feature__title">Conversion-focused landing pages</h3>
+              <p class="feature__text">
+                Clear messaging, strong CTAs, and smart layouts that guide visitors to
+                call or request a quote.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature__icon" aria-hidden="true">📍</div>
+              <h3 class="feature__title">Local SEO fundamentals</h3>
+              <p class="feature__text">
+                Technical best practices and on-page structure to support visibility in
+                your service area.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature__icon" aria-hidden="true">🛠️</div>
+              <h3 class="feature__title">Tracking + lead capture</h3>
+              <p class="feature__text">
+                Simple forms, click-to-call, and analytics-ready setups so you can measure
+                what’s working.
+              </p>
+            </article>
+          </div>
+
+          <div class="cta-strip">
+            <div class="cta-strip__copy">
+              <p class="cta-strip__title">Want more calls next week?</p>
+              <p class="cta-strip__text">
+                Get a quick audit and a landing page plan tailored to your market.
+              </p>
+            </div>
+            <div class="cta-strip__actions">
+              <button class="btn btn--primary" type="button" data-open-lead>
+                Book a Call
+              </button>
+              <a class="btn btn--ghost" href="#lead">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="who" class="section section--muted">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Built for contractors and real estate agents</h2>
+            <p class="section__subtitle">
+              Two fast paths—same goal: turn traffic into qualified leads.
+            </p>
+          </div>
+
+          <div class="tabs" data-tabs>
+            <div class="tabs__list" role="tablist" aria-label="Who we help">
+              <button
+                class="tabs__tab"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-contractors"
+                id="tab-contractors"
+                data-tab="contractors"
+              >
+                Contractors
+              </button>
+              <button
+                class="tabs__tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-realestate"
+                id="tab-realestate"
+                data-tab="realestate"
+                tabindex="-1"
+              >
+                Real estate agents
+              </button>
+            </div>
+
+            <div class="tabs__panels">
+              <div
+                class="tabs__panel"
+                role="tabpanel"
+                id="panel-contractors"
+                aria-labelledby="tab-contractors"
+              >
+                <div class="panel">
+                  <div class="panel__left">
+                    <h3 class="panel__title">More estimates. Better jobs.</h3>
+                    <p class="panel__text">
+                      Highlight your specialties, service areas, and proof—then make it
+                      effortless to request a quote.
+                    </p>
+                    <ul class="checklist">
+                      <li>Service + area pages structure</li>
+                      <li>Before/after or project showcase</li>
+                      <li>Click-to-call on mobile</li>
+                    </ul>
+                  </div>
+                  <div class="panel__right">
+                    <div class="stat">
+                      <p class="stat__label">Best for</p>
+                      <p class="stat__value">Roofing, remodeling, HVAC, landscaping…</p>
+                    </div>
+                    <div class="stat">
+                      <p class="stat__label">Primary CTA</p>
+                      <p class="stat__value">Request a quote / Book a call</p>
+                    </div>
+                    <div class="stat">
+                      <p class="stat__label">Lead capture</p>
+                      <p class="stat__value">Name • Phone • Email • Business type</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tabs__panel"
+                role="tabpanel"
+                id="panel-realestate"
+                aria-labelledby="tab-realestate"
+                hidden
+              >
+                <div class="panel">
+                  <div class="panel__left">
+                    <h3 class="panel__title">More showings. More listings.</h3>
+                    <p class="panel__text">
+                      Build trust quickly with clean branding, social proof, and clear
+                      pathways to schedule a consultation.
+                    </p>
+                    <ul class="checklist">
+                      <li>Neighborhood-focused messaging</li>
+                      <li>Buyer / seller funnel pages</li>
+                      <li>Appointment-first CTAs</li>
+                    </ul>
+                  </div>
+                  <div class="panel__right">
+                    <div class="stat">
+                      <p class="stat__label">Best for</p>
+                      <p class="stat__value">Agents, teams, brokers, property managers</p>
+                    </div>
+                    <div class="stat">
+                      <p class="stat__label">Primary CTA</p>
+                      <p class="stat__value">Schedule a consult / Get started</p>
+                    </div>
+                    <div class="stat">
+                      <p class="stat__label">Lead capture</p>
+                      <p class="stat__value">Name • Phone • Email • Business type</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">A simple, reliable process</h2>
+            <p class="section__subtitle">
+              Clear steps so you know exactly what happens next.
+            </p>
+          </div>
+
+          <ol class="steps">
+            <li class="steps__item">
+              <div class="steps__num" aria-hidden="true">1</div>
+              <div>
+                <p class="steps__title">Quick discovery</p>
+                <p class="steps__text">
+                  We learn your niche, offer, location, and what a “good lead” looks like.
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__num" aria-hidden="true">2</div>
+              <div>
+                <p class="steps__title">Build + refine</p>
+                <p class="steps__text">
+                  We craft the page layout, messaging, and calls-to-action for conversions.
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__num" aria-hidden="true">3</div>
+              <div>
+                <p class="steps__title">Launch-ready</p>
+                <p class="steps__text">
+                  You get a mobile-friendly page and a lead form that’s ready to connect to
+                  your inbox or CRM.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="faq" class="section section--muted">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">FAQ</h2>
+            <p class="section__subtitle">
+              No pricing on this mockup—just the basics prospects ask about.
+            </p>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <details class="accordion__item">
+              <summary class="accordion__summary">How fast can we launch?</summary>
+              <div class="accordion__content">
+                Most landing pages can be ready quickly once we have your logo, service
+                list, and service area. This mockup is designed for a fast turnaround.
+              </div>
+            </details>
+            <details class="accordion__item">
+              <summary class="accordion__summary">Do you work with my niche?</summary>
+              <div class="accordion__content">
+                If you’re a contractor or a real estate professional, the structure here is
+                built around what converts: trust, clarity, and easy contact.
+              </div>
+            </details>
+            <details class="accordion__item">
+              <summary class="accordion__summary">Where do leads go?</summary>
+              <div class="accordion__content">
+                This page includes an interactive form. For a live site, connect it to your
+                email/CRM using a free form endpoint (instructions included).
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="lead" class="section lead">
+        <div class="container lead__grid">
+          <div class="lead__copy">
+            <h2 class="lead__title">Ready to get started?</h2>
+            <p class="lead__subtitle">
+              Share a few details and we’ll follow up to schedule a quick call.
+            </p>
+            <div class="lead__bullets">
+              <div class="mini">
+                <p class="mini__title">What you’ll get</p>
+                <p class="mini__text">A clear landing page outline tailored to your market.</p>
+              </div>
+              <div class="mini">
+                <p class="mini__title">Best next step</p>
+                <p class="mini__text">A 15-minute call to confirm goals and target leads.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lead__form">
+            <div class="card card--tight">
+              <form class="form" id="leadForm" novalidate>
+                <label class="field">
+                  <span class="field__label">Name</span>
+                  <input
+                    class="field__input"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    placeholder="Jane Smith"
+                  />
+                  <span class="field__error" data-error-for="name"></span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Phone</span>
+                  <input
+                    class="field__input"
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                    placeholder="(555) 123‑4567"
+                  />
+                  <span class="field__error" data-error-for="phone"></span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input
+                    class="field__input"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="jane@company.com"
+                  />
+                  <span class="field__error" data-error-for="email"></span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Business type</span>
+                  <select class="field__input" name="businessType" required>
+                    <option value="" selected disabled>Select…</option>
+                    <option>Contractor</option>
+                    <option>Real estate agent</option>
+                    <option>Property management</option>
+                    <option>Other</option>
+                  </select>
+                  <span class="field__error" data-error-for="businessType"></span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">What do you want more of?</span>
+                  <textarea
+                    class="field__input field__input--area"
+                    name="goal"
+                    rows="3"
+                    placeholder="More calls, more estimates, more listing appointments…"
+                  ></textarea>
+                </label>
+
+                <button class="btn btn--primary btn--full" type="submit">
+                  Get Started
+                </button>
+
+                <p class="fineprint">
+                  This is a mockup. Submissions are saved locally unless you connect a form
+                  endpoint.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__brand">
+          <span class="brand__text">Ironclad-Sites</span>
+          <span class="footer__sep" aria-hidden="true">•</span>
+          <span class="footer__muted">Lead-generating websites</span>
+        </p>
+
+        <div class="footer__links">
+          <a href="#services">Services</a>
+          <a href="#who">Who we help</a>
+          <a href="#lead">Get started</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="leadModal" aria-label="Book a call">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <p class="modal__title">Book a call</p>
+          <button class="iconbtn" type="button" data-close-lead aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M18 6L6 18M6 6l12 12"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <p class="modal__text">
+          This mockup uses an interactive form with validation. For a real campaign, connect
+          it to your email/CRM (instructions in the README).
+        </p>
+
+        <form class="form" id="modalLeadForm" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span class="field__label">Name</span>
+              <input class="field__input" name="name" autocomplete="name" required />
+              <span class="field__error" data-error-for="name"></span>
+            </label>
+            <label class="field">
+              <span class="field__label">Business type</span>
+              <select class="field__input" name="businessType" required>
+                <option value="" selected disabled>Select…</option>
+                <option>Contractor</option>
+                <option>Real estate agent</option>
+                <option>Property management</option>
+                <option>Other</option>
+              </select>
+              <span class="field__error" data-error-for="businessType"></span>
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input class="field__input" type="email" name="email" autocomplete="email" required />
+            <span class="field__error" data-error-for="email"></span>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Phone</span>
+            <input class="field__input" type="tel" name="phone" autocomplete="tel" required />
+            <span class="field__error" data-error-for="phone"></span>
+          </label>
+
+          <button class="btn btn--primary btn--full" type="submit">
+            Request a Call
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <div class="toast__inner">
+        <p class="toast__title">Submitted</p>
+        <p class="toast__text" id="toastText">We’ll follow up shortly.</p>
+        <button class="toast__btn" type="button" id="toastBtn" hidden>Copy details</button>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
